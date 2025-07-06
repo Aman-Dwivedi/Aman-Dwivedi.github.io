@@ -180,7 +180,17 @@ export default function Component() {
         }`}
       >
         <div className="flex items-center justify-between px-6 py-6 max-w-6xl mx-auto">
-          <div className="font-semibold text-gray-900 dark:text-white transition-colors duration-300">Aman Dwivedi</div>
+          <button
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              })
+            }}
+            className="font-semibold text-gray-900 dark:text-white transition-colors duration-300 hover:text-sky-600 dark:hover:text-sky-400 cursor-pointer"
+          >
+            Aman Dwivedi
+          </button>
           <nav className="flex items-center space-x-8">
             <a
               href="#work"
@@ -224,9 +234,9 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <main className="pt-24 relative">
-        <section className="max-w-4xl mx-auto px-6 py-16 text-center scroll-mt-24">
-          <div className="animate-fade-in-up">
+      <main className="relative">
+        <section className="min-h-screen flex items-center justify-center px-6 text-center pt-24">
+          <div className="animate-fade-in-up max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
               Hey! I'm Aman Dwivedi <span className="inline-block animate-wave">👋</span>
             </h1>
@@ -238,42 +248,12 @@ export default function Component() {
             <div className="max-w-2xl mx-auto mb-8">
               <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6 transition-colors duration-300">
                 I'm a Computer Science graduate student at UC Davis, passionate about systems research, software
-                development, and building efficient solutions. I specialize in memory management systems, satellite
-                networks, and full-stack development.
+                development, and building efficient solutions. I specialize in memory management systems and full-stack development.
               </p>
 
               <p className="text-gray-700 dark:text-gray-300 text-lg transition-colors duration-300">
                 Currently working as a Graduate Research Assistant on HeMem - a Heterogeneous Memory Management System.
               </p>
-            </div>
-          </div>
-
-          {/* Project Cards */}
-          <div className="grid md:grid-cols-2 gap-6 mt-20">
-            {/* Left Project Card - HeMem Research */}
-            <div className="group bg-gradient-to-br from-purple-200 to-purple-300 dark:from-purple-800 dark:to-purple-900 rounded-2xl p-8 h-80 flex items-end justify-center relative overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-64 h-40 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl relative z-10 overflow-hidden">
-                <img
-                  src="/images/hemem-system.png"
-                  alt="HeMem Memory Management System"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* Right Project Card - Charitap */}
-            <div className="group bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-800 dark:to-sky-900 rounded-2xl p-8 h-80 flex items-end justify-center relative overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-sky-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-64 h-40 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl relative z-10 overflow-hidden">
-                <img
-                  src="/images/charitap-app.png"
-                  alt="Charitap Micro-Donation Platform"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
             </div>
           </div>
         </section>
@@ -293,8 +273,8 @@ export default function Component() {
             <div className="space-y-16">
               {/* Project 1 - HeMem Research */}
               <div className="grid md:grid-cols-2 gap-12 items-center group">
-                <div className="bg-gradient-to-br from-purple-200 to-purple-300 dark:from-purple-800 dark:to-purple-900 rounded-2xl p-8 h-64 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-48 h-32 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                <div className="bg-gradient-to-br from-purple-200 to-purple-300 dark:from-purple-800 dark:to-purple-900 rounded-2xl p-2 h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                     <img
                       src="/images/hemem-system.png"
                       alt="HeMem Memory Management System"
@@ -304,19 +284,17 @@ export default function Component() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
-                    HeMem - Heterogeneous Memory Management
+                    Graduate Research Assistant - HeMem
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                    Graduate Research Assistant working with Dr. Amanda Raybuck on improving the efficiency of HeMem
-                    system. Developed prefetching techniques to migrate pages between NVM and DRAM, optimizing memory
-                    performance.
+                    I'm currently working on something pretty exciting in the memory systems space. The idea is to make heterogeneous memory work smarter by predicting what data applications will need next and moving it between different storage tiers before it's actually requested. It's like having a really good librarian who knows exactly which books you'll want to read next and puts them on your desk ahead of time.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm transition-colors duration-300">
-                      Systems Research
+                      Memory Systems
                     </span>
                     <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm transition-colors duration-300">
-                      Memory Management
+                      Prefetching
                     </span>
                     <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm transition-colors duration-300">
                       C/C++
@@ -325,14 +303,14 @@ export default function Component() {
                 </div>
               </div>
 
-              {/* Project 2 - OSIRIS-REx */}
+              {/* Project 2 - Software Engineering Intern */}
               <div className="grid md:grid-cols-2 gap-12 items-center group">
                 <div className="md:order-2">
-                  <div className="bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-800 dark:to-sky-900 rounded-2xl p-8 h-64 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-48 h-32 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                  <div className="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-2xl p-2 h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                       <img
-                        src="/images/nasa-osiris.png"
-                        alt="NASA OSIRIS-REx Mission"
+                        src="/images/daniels-company.jpg"
+                        alt="The Daniels Company Website"
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </div>
@@ -340,12 +318,45 @@ export default function Component() {
                 </div>
                 <div className="md:order-1 space-y-4">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
-                    NASA OSIRIS-REx Data Management
+                    Software Engineering Intern
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                    Developed a comprehensive data architecture and management system for NASA's OSIRIS-REx mission.
-                    Created a multiplatform Flutter app for seamless data upload and management by 250+ scientists
-                    worldwide.
+                    At The Daniels Company, I got to build their web presence from the ground up. What started as a simple website request turned into a full-stack project where I designed both the user experience and the underlying architecture. The challenge was creating something that looked great but could also handle real business needs while staying secure and scalable in the cloud.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm transition-colors duration-300">
+                      Next.js
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm transition-colors duration-300">
+                      Node.js
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm transition-colors duration-300">
+                      AWS
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm transition-colors duration-300">
+                      Full-Stack
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project 3 - OSIRIS-REx */}
+              <div className="grid md:grid-cols-2 gap-12 items-center group">
+                <div className="bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-800 dark:to-sky-900 rounded-2xl p-2 h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                    <img
+                      src="/images/nasa-osiris.png"
+                      alt="NASA OSIRIS-REx Mission"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
+                    Software Developer - NASA OSIRIS-REx
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
+                    Working on a NASA mission was surreal. I built the data infrastructure that hundreds of scientists around the world use to upload and analyze samples from an asteroid. The tricky part wasn't just handling the data, it was making sure everything worked seamlessly across different platforms and could scale as the mission progressed. Every line of code had to be rock solid because, well, it's NASA.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 rounded-full text-sm transition-colors duration-300">
@@ -358,16 +369,53 @@ export default function Component() {
                       Flutter
                     </span>
                     <span className="px-3 py-1 bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 rounded-full text-sm transition-colors duration-300">
-                      PostgreSQL
+                      Data Architecture
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Project 3 - Charitap */}
+              {/* Project 4 - Legacy Codebase Refactoring */}
               <div className="grid md:grid-cols-2 gap-12 items-center group">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-900 rounded-2xl p-8 h-64 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-48 h-32 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                <div className="md:order-2">
+                  <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-2 h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                      <img
+                        src="/images/research-visualization.png"
+                        alt="Research Data Visualization"
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="md:order-1 space-y-4">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
+                    Undergraduate Research Assistant
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
+                    Sometimes the most impactful work is the least glamorous. I spent months translating decades-old mathematical models from FORTRAN into modern Python, essentially giving new life to research that was trapped in legacy code. The real satisfaction came from seeing simulations that used to take hours now run in minutes, opening up entirely new possibilities for the research team.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
+                      Code Migration
+                    </span>
+                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
+                      Python
+                    </span>
+                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
+                      Performance
+                    </span>
+                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
+                      Visualization
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project 5 - Charitap */}
+              <div className="grid md:grid-cols-2 gap-12 items-center group">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-900 rounded-2xl p-2 h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-80 h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                     <img
                       src="/images/charitap-app.png"
                       alt="Charitap Micro-Donation Platform"
@@ -377,58 +425,23 @@ export default function Component() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
-                    Charitap - Micro-Donation Platform
+                    Charitap - Personal Project
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                    A micro-donation platform that rounds up everyday purchases and automatically donates spare change
-                    to chosen charities. Implemented as a Chrome Extension leveraging Stripe API and e-commerce
-                    principles.
+                    I've always been fascinated by the idea of effortless giving. Charitap rounds up your online purchases to the nearest dollar and donates the difference to charity. Building it as a Chrome extension was the perfect challenge, it had to be lightweight, secure, and work seamlessly across thousands of different websites while handling real money transactions.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm transition-colors duration-300">
-                      JavaScript
-                    </span>
                     <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm transition-colors duration-300">
                       Chrome Extension
                     </span>
                     <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm transition-colors duration-300">
+                      JavaScript
+                    </span>
+                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm transition-colors duration-300">
                       Stripe API
                     </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Project 4 - Hypatia Simulator */}
-              <div className="grid md:grid-cols-2 gap-12 items-center group">
-                <div className="md:order-2">
-                  <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-8 h-64 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-48 h-32 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
-                      <img
-                        src="/images/hypatia-simulator.png"
-                        alt="Hypatia LEO Satellite Simulator"
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="md:order-1 space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
-                    LEO Satellite Network Optimization
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                    Worked with Dr. Beichuan Zhang on improving efficiency of Hypatia Simulator for Low Earth Orbit
-                    satellite networks. Replaced brute force algorithms with optimized rules for shortest path
-                    calculations between satellites.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
-                      Network Optimization
-                    </span>
-                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
-                      Python
-                    </span>
-                    <span className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm transition-colors duration-300">
-                      Algorithm Design
+                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm transition-colors duration-300">
+                      Fintech
                     </span>
                   </div>
                 </div>
@@ -451,62 +464,25 @@ export default function Component() {
 
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="group">
-                <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-8 h-80 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="w-32 h-32 bg-gray-300 dark:bg-gray-600 rounded-full flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl">
-                    <div className="text-gray-500 dark:text-gray-400 text-sm transition-colors duration-300">Photo</div>
+                <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-8 h-[28rem] flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                  <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl transition-all duration-300 group-hover:shadow-3xl">
+                    <img
+                      src="/aman-profile.jpg"
+                      alt="Aman Dwivedi"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="space-y-6">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                  I'm currently pursuing my Master's in Computer Science at UC Davis (GPA: 3.9), building on my strong
-                  foundation from the University of Arizona where I graduated with a perfect 4.0 GPA in Computer Science
-                  with a minor in Mathematics.
+                  I'm currently pursuing my Master's in Computer Science at UC Davis, where I spend most of my time diving deep into memory management systems and exploring how we can make computing more efficient. Before this, I completed my undergraduate degree at the University of Arizona with a focus on both computer science and mathematics, which gave me a solid foundation for tackling complex problems from multiple angles.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                  My research focuses on systems optimization, particularly memory management and network efficiency.
-                  I've had the privilege of working on cutting-edge projects including NASA missions and satellite
-                  network research.
+                  What excites me most is the intersection between theoretical research and real-world applications. Whether I'm working on optimizing heterogeneous memory systems, building full-stack applications, or helping students understand complex algorithms as a teaching assistant, I'm always looking for ways to bridge that gap between academic research and practical software development. I believe the best solutions come from understanding both the theory behind the problem and the practical constraints of implementing it.
                 </p>
-
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                  As a Teaching Assistant for over 3 years, I've helped hundreds of students master complex concepts in
-                  computer science and mathematics, from introductory programming to advanced discrete structures.
-                </p>
-
-                <div className="pt-4">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
-                    Technical Skills
-                  </h3>
-                  <div className="grid grid-cols-1 gap-4">
-                    <div className="group">
-                      <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-2 transition-colors duration-300">
-                        Languages
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300">
-                        Python, Java, C/C++, JavaScript, TypeScript, SQL, HTML/CSS, Dart, MATLAB, Fortran
-                      </p>
-                    </div>
-                    <div className="group">
-                      <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-2 transition-colors duration-300">
-                        Frameworks & Tools
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300">
-                        Django, Flask, Flutter, Node.js, AWS, Git, UNIX, Streamlit
-                      </p>
-                    </div>
-                    <div className="group">
-                      <h4 className="font-medium text-gray-800 dark:text-gray-200 mb-2 transition-colors duration-300">
-                        Libraries & Databases
-                      </h4>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-300">
-                        Pandas, NumPy, Matplotlib, Scikit-Learn, PostgreSQL, MySQL, Oracle
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -514,7 +490,7 @@ export default function Component() {
 
         {/* Contact Section */}
         <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800 scroll-mt-24 transition-colors duration-300">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
                 Contact
@@ -524,213 +500,87 @@ export default function Component() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-16">
-              <div>
+            <div className="grid lg:grid-cols-3 gap-12 items-start">
+              {/* Left side - Get in Touch */}
+              <div className="lg:col-span-1">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
                   Get in touch
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed transition-colors duration-300">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300">
                   I'm always interested in discussing new research opportunities, software development projects, and
                   collaborations. Whether you're looking for a researcher, developer, or teaching assistant, I'd love to
                   hear from you.
                 </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3 group cursor-pointer">
-                    <div className="w-10 h-10 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                      <Mail className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-gray-700 dark:text-gray-300 transition-colors duration-300 group-hover:text-sky-600 dark:group-hover:text-sky-400">
-                      dwivedi@ucdavis.edu
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3 group cursor-pointer">
-                    <div className="w-10 h-10 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                      <Phone className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-gray-700 dark:text-gray-300 transition-colors duration-300 group-hover:text-sky-600 dark:group-hover:text-sky-400">
-                      520-910-8976
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3 group cursor-pointer">
-                    <div className="w-10 h-10 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                      <Linkedin className="w-5 h-5 text-white" />
-                    </div>
-                    <a
-                      href="#"
-                      className="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-300"
-                    >
-                      LinkedIn Profile
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3 group cursor-pointer">
-                    <div className="w-10 h-10 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                      <Github className="w-5 h-5 text-white" />
-                    </div>
-                    <a
-                      href="#"
-                      className="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-300"
-                    >
-                      GitHub Profile
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3 group cursor-pointer">
-                    <div className="w-10 h-10 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                      <MapPin className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-gray-700 dark:text-gray-300 transition-colors duration-300">Davis, CA</span>
-                  </div>
-                </div>
               </div>
 
-              <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm dark:shadow-2xl transition-all duration-300 hover:shadow-lg dark:hover:shadow-2xl">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300"
-                    >
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-transparent outline-none transition-all duration-300 ${
-                        formErrors.name ? "border-red-500 dark:border-red-400" : "border-gray-200 dark:border-gray-600"
-                      } dark:bg-gray-800 dark:text-white`}
-                      placeholder="Your name"
-                    />
-                    {formErrors.name && (
-                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{formErrors.name}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300"
-                    >
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-transparent outline-none transition-all duration-300 ${
-                        formErrors.email ? "border-red-500 dark:border-red-400" : "border-gray-200 dark:border-gray-600"
-                      } dark:bg-gray-800 dark:text-white`}
-                      placeholder="your@email.com"
-                    />
-                    {formErrors.email && (
-                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{formErrors.email}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="subject"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300"
-                    >
-                      Subject
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-transparent outline-none transition-all duration-300"
-                    >
-                      <option value="Research Collaboration">Research Collaboration</option>
-                      <option value="Software Development">Software Development</option>
-                      <option value="Teaching Opportunity">Teaching Opportunity</option>
-                      <option value="General Inquiry">General Inquiry</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300"
-                    >
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-transparent outline-none transition-all duration-300 resize-none ${
-                        formErrors.message
-                          ? "border-red-500 dark:border-red-400"
-                          : "border-gray-200 dark:border-gray-600"
-                      } dark:bg-gray-800 dark:text-white`}
-                      placeholder="Tell me about your project or opportunity..."
-                    ></textarea>
-                    {formErrors.message && (
-                      <p className="mt-1 text-sm text-red-600 dark:text-red-400">{formErrors.message}</p>
-                    )}
-                  </div>
-
-                  {submitStatus === "success" && (
-                    <div className="p-4 bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-600 rounded-lg">
-                      <p className="text-green-700 dark:text-green-300 text-sm">
-                        ✅ Message sent successfully! I'll get back to you soon.
-                      </p>
-                    </div>
-                  )}
-
-                  {submitStatus === "error" && (
-                    <div className="p-4 bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-600 rounded-lg">
-                      <p className="text-red-700 dark:text-red-300 text-sm">
-                        ❌ Failed to send message. Please try again or contact me directly at dwivedi@ucdavis.edu
-                      </p>
-                    </div>
-                  )}
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className={`w-full py-3 px-6 rounded-lg font-medium transform transition-all duration-300 ${
-                      isSubmitting
-                        ? "bg-gray-400 dark:bg-gray-600 cursor-not-allowed"
-                        : "bg-gray-900 dark:bg-sky-600 hover:bg-gray-800 dark:hover:bg-sky-700 hover:scale-105 hover:shadow-lg"
-                    } text-white`}
+              {/* Right side - Contact methods in two columns */}
+              <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                {/* First column - 2 contact methods */}
+                <div className="space-y-4">
+                  <a
+                    href="mailto:dwivedi@ucdavis.edu"
+                    className="flex items-center space-x-4 group cursor-pointer p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 block"
                   >
-                    {isSubmitting ? (
-                      <span className="flex items-center justify-center">
-                        <svg
-                          className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                          ></path>
-                        </svg>
-                        Sending...
+                    <div className="w-12 h-12 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                      <span className="text-lg text-gray-700 dark:text-gray-300 transition-colors duration-300 group-hover:text-sky-600 dark:group-hover:text-sky-400 font-medium">
+                        dwivedi@ucdavis.edu
                       </span>
-                    ) : (
-                      "Send Message"
-                    )}
-                  </button>
-                </form>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/amandwivedi16/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-4 group cursor-pointer p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 block"
+                  >
+                    <div className="w-12 h-12 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                      <Linkedin className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
+                      <span className="text-lg text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-300 font-medium">
+                        LinkedIn Profile
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                {/* Second column - 2 contact methods */}
+                <div className="space-y-4">
+                  <a
+                    href="https://github.com/Aman-Dwivedi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-4 group cursor-pointer p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 block"
+                  >
+                    <div className="w-12 h-12 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                      <Github className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
+                      <span className="text-lg text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-300 font-medium">
+                        GitHub Profile
+                      </span>
+                    </div>
+                  </a>
+
+                  <div className="flex items-center space-x-4 group cursor-pointer p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300">
+                    <div className="w-12 h-12 bg-sky-400 dark:bg-sky-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
+                      <span className="text-lg text-gray-700 dark:text-gray-300 transition-colors duration-300 font-medium">
+                        Davis, CA
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -741,7 +591,7 @@ export default function Component() {
       <footer className="py-8 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">
-            © 2024 Aman Dwivedi. All rights reserved.
+            © 2025 Aman Dwivedi. All rights reserved.
           </p>
         </div>
       </footer>
