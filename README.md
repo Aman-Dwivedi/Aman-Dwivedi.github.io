@@ -1,30 +1,21 @@
-# Recreate UI screenshot
+# Aman Dwivedi - Portfolio Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my work as a Computer Science researcher and software developer.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/dwivedi-2061s-projects/v0-recreate-ui-screenshot)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/vswLZzAAEmF)
+## 🌟 Features
 
-## Overview
+- **Responsive Design** - Optimized for all devices (desktop, tablet, mobile)
+- **Dark/Light Mode** - Toggle between themes with smooth transitions
+- **Modern UI/UX** - Clean, professional design with smooth animations
+- **Interactive Sections** - Engaging hover effects and transitions
+- **Contact Integration** - Direct email links and social media connections
+- **Performance Optimized** - Fast loading with Next.js optimizations
+- **SEO Friendly** - Proper meta tags and semantic HTML structure
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🚀 Tech Stack
 
-## Deployment
-
-Your project is live at:
-
-**[https://vercel.com/dwivedi-2061s-projects/v0-recreate-ui-screenshot](https://vercel.com/dwivedi-2061s-projects/v0-recreate-ui-screenshot)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/vswLZzAAEmF](https://v0.dev/chat/projects/vswLZzAAEmF)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- **Framework:** [Next.js 14](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Package Manager:** [pnpm](https://pnpm.io/)
