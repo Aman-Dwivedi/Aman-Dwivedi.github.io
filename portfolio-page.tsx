@@ -294,7 +294,7 @@ export default function Component() {
         <section className="min-h-screen flex items-center justify-center px-6 text-center pt-24">
           <div className="animate-fade-in-up max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
-              Hey! I'm Aman Dwivedi <span className="inline-block animate-wave">👋</span>
+              Hello! I'm Aman Dwivedi
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-sky-400 dark:text-sky-300 italic mb-8 font-light transition-colors duration-300">
@@ -330,7 +330,7 @@ export default function Component() {
               {/* Project 1 - HeMem Research */}
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center group">
                 <div className="bg-gradient-to-br from-purple-200 to-purple-300 dark:from-purple-800 dark:to-purple-900 rounded-2xl p-2 h-64 md:h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-32 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-56 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                     <img
                       src="/images/hemem-system.png"
                       alt="HeMem Memory Management System"
@@ -363,7 +363,7 @@ export default function Component() {
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center group">
                 <div className="md:order-2">
                   <div className="bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-2xl p-2 h-64 md:h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-32 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-56 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                       <img
                         src="/images/daniels-company.jpg"
                         alt="The Daniels Company Website"
@@ -399,7 +399,7 @@ export default function Component() {
               {/* Project 3 - OSIRIS-REx */}
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center group">
                 <div className="bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-800 dark:to-sky-900 rounded-2xl p-2 h-64 md:h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-32 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-56 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                     <img
                       src="/images/nasa-osiris.png"
                       alt="NASA OSIRIS-REx Mission"
@@ -435,7 +435,7 @@ export default function Component() {
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center group">
                 <div className="md:order-2">
                   <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-2 h-64 md:h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-32 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-56 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                       <img
                         src="/images/research-visualization.png"
                         alt="Research Data Visualization"
@@ -471,7 +471,7 @@ export default function Component() {
               {/* Project 5 - Charitap */}
               <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center group">
                 <div className="bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-900 rounded-2xl p-2 h-64 md:h-96 flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-32 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm md:w-80 h-56 md:h-80 flex items-center justify-center transition-all duration-300 group-hover:shadow-2xl overflow-hidden">
                     <img
                       src="/images/charitap-app.png"
                       alt="Charitap Micro-Donation Platform"
@@ -520,12 +520,12 @@ export default function Component() {
 
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="group order-2 md:order-1">
-                <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-4 md:p-8 h-64 md:h-[28rem] flex items-center justify-center transition-all duration-500 group-hover:scale-105">
-                  <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl transition-all duration-300 group-hover:shadow-3xl">
+                <div className="bg-gradient-to-br from-amber-100 to-amber-200 dark:from-amber-800 dark:to-amber-900 rounded-2xl p-4 md:p-8 h-72 md:h-[26rem] w-64 md:w-auto mx-auto flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+                  <div className="w-48 h-60 md:w-80 md:h-80 rounded-lg overflow-hidden shadow-2xl transition-all duration-300 group-hover:shadow-3xl">
                     <img
                       src="/aman-profile.jpg"
                       alt="Aman Dwivedi"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-lg"
                     />
                   </div>
                 </div>
@@ -556,21 +556,9 @@ export default function Component() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
-              {/* Left side - Get in Touch */}
-              <div className="lg:col-span-1">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
-                  Get in touch
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed transition-colors duration-300 text-sm md:text-base">
-                  I'm always interested in discussing new research opportunities, software development projects, and
-                  collaborations. Whether you're looking for a researcher, developer, or teaching assistant, I'd love to
-                  hear from you.
-                </p>
-              </div>
-
-              {/* Right side - Contact methods in two columns */}
-              <div className="lg:col-span-2 grid sm:grid-cols-2 gap-4 lg:gap-6">
+            <div className="flex justify-center">
+              {/* Contact methods in two columns */}
+              <div className="grid sm:grid-cols-2 gap-4 lg:gap-6 max-w-2xl w-full pl-20">
                 {/* First column - 2 contact methods */}
                 <div className="space-y-4">
                   <a
