@@ -1,6 +1,6 @@
 # Aman Dwivedi - Portfolio Website
 
-A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my work as a Computer Science researcher and software developer.
+A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my work as a Computer Science researcher and software developer at https://dwivediaman.netlify.app/
 
 ## 🌟 Features
 
